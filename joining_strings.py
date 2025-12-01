@@ -2,7 +2,7 @@ myTuple = ('1','2','3','4','5','6','7','8','9')
 print(myTuple)
 
 a = list(myTuple)
-a.append('10')
+a.append('10')  # type: ignore[arg-type]
 print(a)
 
 x = ', '.join(a)
@@ -11,8 +11,8 @@ print(x)
 y = list(myTuple)
 # print(y)
 
-y.append('10')
-y = ', '.join(y)
+# y.append('10')
+# y = ', '.join(y)
 # print(y)
 
 result = ''
