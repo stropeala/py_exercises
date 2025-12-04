@@ -9,87 +9,87 @@
 
 import random
 
-necesitati = {
-    'nec1': random.randint(50, 200),
-    'nec2': random.randint(50, 200),
-    'nec3': random.randint(50, 200),
-    'nec4': random.randint(50, 200),
-    'nec5': random.randint(50, 200),
-    'nec6': random.randint(50, 200),
-    'nec7': random.randint(50, 200),
-    'nec8': random.randint(50, 200),
-    'nec9': random.randint(50, 200),
-    'nec10': random.randint(50, 200),
-    'nec11': random.randint(50, 200),
-    'nec12': random.randint(50, 200),
-    'nec13': random.randint(50, 200),
-    'nec14': random.randint(50, 200),
-    'nec15': random.randint(50, 200)
-}
+# necesitati = {
+#     'nec1': random.randint(50, 200),
+#     'nec2': random.randint(50, 200),
+#     'nec3': random.randint(50, 200),
+#     'nec4': random.randint(50, 200),
+#     'nec5': random.randint(50, 200),
+#     'nec6': random.randint(50, 200),
+#     'nec7': random.randint(50, 200),
+#     'nec8': random.randint(50, 200),
+#     'nec9': random.randint(50, 200),
+#     'nec10': random.randint(50, 200),
+#     'nec11': random.randint(50, 200),
+#     'nec12': random.randint(50, 200),
+#     'nec13': random.randint(50, 200),
+#     'nec14': random.randint(50, 200),
+#     'nec15': random.randint(50, 200)
+# }
 
-suma_totala = sum(list(necesitati.values()))
-
-
-def black_friday():
-    necesitati = [i + 1 for i in range(15)]
-    print(necesitati)
-    cos_cumparaturi = {necesitati[i]:random.randint(50, 200) for i in range(14)}
-    print(cos_cumparaturi)
-    total_cos = sum(list(cos_cumparaturi.values()))
-    print(total_cos)
-    for i in cos_cumparaturi:
-        if total_cos > 1500:
-            del cos_cumparaturi[i]
-        else:
-            pass
-    return cos_cumparaturi
-
-# print(black_friday())
+# suma_totala = sum(list(necesitati.values()))
 
 
-def black_friday2():
-    necesitati = [i + 1 for i in range(15)]
-    cos_cumparaturi = {necesitati[i]:random.randint(50, 200) for i in range(14)}
-    total_cos = sum(list(cos_cumparaturi.values()))
-    not_so_necessary = {}
-    for i, j in cos_cumparaturi.items():
-        if total_cos > 1500:
-            not_so_necessary[i] = j
-    for i, j in not_so_necessary.items():
-        del cos_cumparaturi[i]
-    return cos_cumparaturi
+# def black_friday():
+#     necesitati = [i + 1 for i in range(15)]
+#     print(necesitati)
+#     cos_cumparaturi = {necesitati[i]:random.randint(50, 200) for i in range(14)}
+#     print(cos_cumparaturi)
+#     total_cos = sum(list(cos_cumparaturi.values()))
+#     print(total_cos)
+#     for i in cos_cumparaturi:
+#         if total_cos > 1500:
+#             del cos_cumparaturi[i]
+#         else:
+#             pass
+#     return cos_cumparaturi
 
-# print(black_friday2())
-
-
-def black_friday3():
-    necesitati = [i + 1 for i in range(15)]
-    cos_cumparaturi = {necesitati[i]:random.randint(50, 200) for i in range(14)}
-    total_cos = sum(list(cos_cumparaturi.values()))
-    not_so_necessary = {}
-    for i, j in cos_cumparaturi.items():
-        if total_cos > 1500:
-            not_so_necessary[i] = j
-    for i, j in not_so_necessary.items():
-        cos_cumparaturi.pop(i)
-    return cos_cumparaturi
-
-# print(black_friday3())
+# # print(black_friday())
 
 
-def black_friday4():
-    necesitati = [i + 1 for i in range(15)]
-    cos_cumparaturi = {necesitati[i]:random.randint(50, 200) for i in range(14)}
-    total_cos = sum(list(cos_cumparaturi.values()))
-    not_so_necessary = []
-    for i, j in cos_cumparaturi.items():
-        if total_cos > 1500:
-            not_so_necessary.append(i)
-    for i in not_so_necessary:
-        del cos_cumparaturi[i]
-    return cos_cumparaturi
+# def black_friday2():
+#     necesitati = [i + 1 for i in range(15)]
+#     cos_cumparaturi = {necesitati[i]:random.randint(50, 200) for i in range(14)}
+#     total_cos = sum(list(cos_cumparaturi.values()))
+#     not_so_necessary = {}
+#     for i, j in cos_cumparaturi.items():
+#         if total_cos > 1500:
+#             not_so_necessary[i] = j
+#     for i, j in not_so_necessary.items():
+#         del cos_cumparaturi[i]
+#     return cos_cumparaturi
 
-# print(black_friday4())
+# # print(black_friday2())
+
+
+# def black_friday3():
+#     necesitati = [i + 1 for i in range(15)]
+#     cos_cumparaturi = {necesitati[i]:random.randint(50, 200) for i in range(14)}
+#     total_cos = sum(list(cos_cumparaturi.values()))
+#     not_so_necessary = {}
+#     for i, j in cos_cumparaturi.items():
+#         if total_cos > 1500:
+#             not_so_necessary[i] = j
+#     for i, j in not_so_necessary.items():
+#         cos_cumparaturi.pop(i)
+#     return cos_cumparaturi
+
+# # print(black_friday3())
+
+
+# def black_friday4():
+#     necesitati = [i + 1 for i in range(15)]
+#     cos_cumparaturi = {necesitati[i]:random.randint(50, 200) for i in range(14)}
+#     total_cos = sum(list(cos_cumparaturi.values()))
+#     not_so_necessary = []
+#     for i, j in cos_cumparaturi.items():
+#         if total_cos > 1500:
+#             not_so_necessary.append(i)
+#     for i in not_so_necessary:
+#         del cos_cumparaturi[i]
+#     return cos_cumparaturi
+
+# # print(black_friday4())
 
 
 def black_friday5():
