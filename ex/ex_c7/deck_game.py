@@ -49,14 +49,29 @@ import random
 
 
 def deck_game():
-    cards = ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King']
-    symbols = ['hearts', 'spades', 'diamonds', 'clubs']
+    cards = [
+        "Ace",
+        "Two",
+        "Three",
+        "Four",
+        "Five",
+        "Six",
+        "Seven",
+        "Eight",
+        "Nine",
+        "Ten",
+        "Jack",
+        "Queen",
+        "King",
+    ]
+    symbols = ["hearts", "spades", "diamonds", "clubs"]
     deck_of_cards_values = {}
-    for value, card in enumerate(cards, start = 1):
+    for value, card in enumerate(cards, start=1):
         for symbol in symbols:
-            deck_of_cards_values[f'{card} of {symbol}'] = value
+            deck_of_cards_values[f"{card} of {symbol}"] = value
     deck_of_cards = list(deck_of_cards_values)
     random.shuffle(deck_of_cards)
     print(deck_of_cards)
+
 
 deck_game()

@@ -94,11 +94,12 @@ import random
 
 def black_friday5():
     necesitati = [i + 1 for i in range(15)]
-    cos_cumparaturi = {necesitati[i]:random.randint(50, 200) for i in range(14)}
+    cos_cumparaturi = {necesitati[i]: random.randint(50, 200) for i in range(14)}
     total_cos = sum(cos_cumparaturi.values())
     while total_cos > 1500 and cos_cumparaturi:
         ne_necesitati = cos_cumparaturi.popitem()
         total_cos -= sum(ne_necesitati)
     return cos_cumparaturi
+
 
 print(black_friday5())

@@ -26,21 +26,25 @@
 # ex3 = ex3()
 # print(f'Noua lista: {ex3}')
 
-el = 1, 2, 'three', 'orfu', 5
+el = 1, 2, "three", "orfu", 5
+
 
 def create_list():
     myList = list(el)
     return myList
 
+
 def get_list_length():
     listLen = len(el)
     return listLen
 
+
 def add_element_to_list():
     myList = list(el)
-    new_el = input('Adaugati un nou element listei:')
-    myList.append(new_el) #pyright: ignore
+    new_el = input("Adaugati un nou element listei:")
+    myList.append(new_el)  # pyright: ignore
     return myList
+
 
 print("Asta este lista de elemente:", create_list())
 print("Aste este lungimea listei:", get_list_length())

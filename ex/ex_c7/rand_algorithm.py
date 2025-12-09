@@ -8,28 +8,32 @@
 
 import random
 
+
 def make_new_list():
     myList = list(range(1, 201))
     random.shuffle(myList)
     return myList
+
 
 def even_nr():
     myList = list(range(1, 201))
     random.shuffle(myList)
     evenList = []
     for i in myList:
-       if i % 2 == 0:
-           evenList.append(i)
+        if i % 2 == 0:
+            evenList.append(i)
     return evenList
+
 
 def divTen():
     myList = list(range(1, 201))
     random.shuffle(myList)
     divByTen = []
     for i in myList:
-       if i % 10 == 0:
-           divByTen.append(i)
+        if i % 10 == 0:
+            divByTen.append(i)
     return divByTen
+
 
 def make_even_newer_list():
     myList = list(range(1, 201))
@@ -40,6 +44,7 @@ def make_even_newer_list():
             twentyTOfiftyfive.append(i)
     return twentyTOfiftyfive
 
+
 def len_of_newer_list():
     myList = list(range(1, 201))
     random.shuffle(myList)
@@ -48,6 +53,7 @@ def len_of_newer_list():
         if i > 20 and i < 50:
             twentyTOfiftyfive.append(i)
     return len(twentyTOfiftyfive)
+
 
 def single_fn():
     myList = list(range(1, 201))
@@ -67,5 +73,6 @@ def single_fn():
     print(divByTen)
     print(twentyTOfiftyfive)
     return len(twentyTOfiftyfive)
+
 
 print(single_fn())
