@@ -48,7 +48,7 @@ import random
 # print(deck_game())
 
 
-def deck_game():
+def shuffle_my_deck():
     cards = [
         "Ace",
         "Two",
@@ -71,7 +71,8 @@ def deck_game():
             deck_of_cards_values[f"{card} of {symbol}"] = value
     deck_of_cards = list(deck_of_cards_values)
     random.shuffle(deck_of_cards)
-    print(deck_of_cards)
+    return deck_of_cards
 
 
-deck_game()
+shuffled_deck = shuffle_my_deck()
+print(shuffled_deck)
