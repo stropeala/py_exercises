@@ -8,10 +8,11 @@ def max_result(limit):
     def actual_wrapper(func):
 
         def wrapper(*args):
-            if func(*args) > limit:
-                return f"Limit exceeded {func(*args)} > {limit}!"
+            result = func(*args)
+            if result > limit:
+                return f"Limit exceeded {result} > {limit}!"
             else:
-                return func(*args)
+                return result
 
         return wrapper
 
