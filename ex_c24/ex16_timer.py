@@ -22,13 +22,14 @@ class Timer:
 
     def tick(self):
         t = self.seconds
+        print(f"Seconds: {t}")
         while t:
             time.sleep(1)
             t -= 1
-            print("Tick!")
-        return "Finished!"
+            print(f"Tick!{t}")
+        print("Finished!")
 
 
 if __name__ == "__main__":
     timer = Timer(10)
-    print(timer.tick())
+    timer.tick()
