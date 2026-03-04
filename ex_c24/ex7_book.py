@@ -33,7 +33,7 @@ class Book:
         self._price = new_price
 
     def price_with_tax(self):
-        return self.price + self.tax_rate * self.price
+        return self.price + Book.tax_rate * self.price
 
 
 if __name__ == "__main__":
