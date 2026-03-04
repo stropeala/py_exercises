@@ -1,0 +1,84 @@
+1) Greeting Bot
+Create a class Greeter with:
+- instance attribute: name
+- method: greet() -> returns "Hi, I'm <name>!"
+2) Counter with Instance State
+Create a class Counter with:
+- instance attribute: value (starts at 0)
+- methods: inc(step=1), dec(step=1)
+3) Rectangle Area + Perimeter
+Create a class Rectangle with:
+- attributes: width, height
+- methods: area(), perimeter()
+4) Student Average
+Create a class Student with:
+- attributes: name, grades (list of floats)
+- method: average() (return 0.0 if empty list)
+5) Bank Account Basics
+Create a class BankAccount with:
+- attributes: owner, balance=0.0
+- methods: deposit(amount), withdraw(amount)
+- Do not allow negative deposits or withdrawals
+- Do not allow balance to go below 0
+6) Class Attribute: Counting Instances
+Create a class Car with:
+- class attribute: total_cars
+- increment it every time a new instance is created
+7) Book with Class Tax
+Create a class Book with:
+- class attribute: tax_rate = 0.05
+- attributes: title, price
+- method: price_with_tax() using class tax_rate
+8) Changing Class Attribute
+Modify tax_rate at class level and observe effect on all instances.
+9) Instance Tax Override
+Create BookFlexibleTax:
+- use self.tax_rate inside price_with_tax()
+- allow overriding tax per instance
+10) Inventory Item
+Create Item with:
+- attributes: name, stock
+- methods: add_stock(), remove_stock()
+- prevent negative stock
+11) Temperature Converter
+Create Temperature with:
+- attribute: celsius
+- methods: to_fahrenheit(), set_celsius()
+12) Logger with Class Counter
+Create Logger with:
+- class attribute: messages_logged
+- method: log(msg) increments counter
+13) Dice
+Create Dice with:
+- attribute: sides
+- method: roll() returns random number between 1 and sides
+14) Playlist
+Create Playlist with:
+- attribute: songs (list)
+- methods: add_song(), remove_song(), list_songs() (return copy)
+15) Password Validator
+Create PasswordValidator with:
+- attribute: min_len
+- method: is_valid(pw) (length + at least one digit)
+16) Timer
+Create Timer with:
+- attribute: seconds
+- methods: tick(), is_finished()
+17) User Profile
+Create User with:
+- attributes: username, email
+- method: display() -> "username <email>"
+18) Shopping Cart
+Create Cart with:
+- attribute: prices (list)
+- methods: add(price), total()
+19) AppConfig
+Create AppConfig with:
+- class attribute: language = "en"
+- attribute: theme
+- method: describe() -> "language=<language>, theme=<theme>"
+20) Game Character
+Create Character with:
+- class attribute: species = "Human"
+- attributes: name, hp
+- methods: take_damage(dmg), status()
