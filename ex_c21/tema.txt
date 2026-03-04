@@ -1,0 +1,232 @@
+1. Fix the code below so that it doesn't generate a SyntaxError.
+
+Hint:  The result should be:
+
+20 200
+
+or 
+
+20
+200
+
+# code start
+
+x = [1, 2]
+y = [10, 100]
+
+for i in x:
+    for j in y:
+            if i % 2 == 0
+                print(i * j):
+
+# code end
+
+2. Fix the code below so that it doesn't generate a NameError.
+
+Hint:  The result should be:
+
+20 200
+
+or 
+
+20
+200
+
+# code start
+
+x = [1, 2]
+y = [10, 100]
+
+for i in x:
+    for i in y:
+            if i % 2 == 0
+                print(i * j):
+
+# code end
+
+3. Add the necessary clause(s) to the code below so that in case the 
+ZeroDivisionError exception is raised then the program prints out "Zero!" to the screen.
+
+# code start
+try:
+    print(25 % 0)
+
+# code end
+
+4. Create a text file named "test.txt". Open and write the following text in it:
+
+"
+1. The quick brown fox jumps over the lazy dog.
+2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+3. 123 Main Street, Cityville, USA.
+4. Today's date is January 3, 2024.
+5. Testing 1, 2, 3... This is a sample test line.
+"
+
+Add the necessary code in between print's parentheses in order to read 
+the content of test.txt as a string and have the result printed out to the 
+screen.
+
+# code start
+f = open("test.txt", "r")
+
+print()
+
+# code end
+
+5. Add the necessary code on line 5 in order to bring back the cursor at the 
+very beginning of test.txt before reading from the file once again.
+
+# code start
+f = open("test.txt", "r")
+
+f.read()
+
+
+
+print(f.read())
+# code end
+
+6. Create a file named math_operations.py with the following content:
+
+		# math_operations.py
+
+		def add(a, b):
+		    return a + b
+
+		def subtract(a, b):
+		    return a - b
+
+		def multiply(a, b):
+		    return a * b
+
+		def divide(a, b):
+		    if b != 0:
+		        return a / b
+		    else:
+		        return "Cannot divide by zero"
+
+Create another file named main_program.py that imports the functions from 
+the previously created file (math_operations.py) 
+
+# code start
+		# this is where "main_program.py" is imported
+
+		# Example usage of the functions from math_operations module
+		num1 = 10
+		num2 = 5
+
+		result_add #will hold the result of the function "add"
+		result_subtract #will hold the result of the function "subtract"
+		result_multiply #will hold the result of the function "multiply"
+		result_divide #will hold the result of the function "divide"
+
+		# Display the results
+		print(f"Addition: {result_add}")
+		print(f"Subtraction: {result_subtract}")
+		print(f"Multiplication: {result_multiply}")
+		print(f"Division: {result_divide}")
+
+# code end
+Run the program.
+
+7. Create a file named shapes.py (content down bellow) in a new python package. Import 
+the functions from the "shapes.py" file in the "main_program.py", in order for the code 
+to run properly.
+
+	# content of shapes.py
+
+	def area_of_square(side_length):
+	    return side_length ** 2
+
+	def area_of_circle(radius):
+	    import math
+	    return math.pi * (radius ** 2)
+
+
+
+	# content of main_program.py
+
+	# Example usage of functions from the shapes module within the geometry_package package
+	side_length = 5
+	radius = 3
+
+	square_area = shapes.area_of_square(side_length)
+	circle_area = shapes.area_of_circle(radius)
+
+	# Display the results
+	print(f"Area of square with side length {side_length}: {square_area}")
+	print(f"Area of circle with radius {radius}: {circle_area}")
+
+8. Create a file named operations.py (content down bellow) in a new python package
+called "math_operations". 
+Import the functions from the file "math_operations.py" (created at exercise 6) in the correct 
+file, so that "main_program.py" may run properly.
+
+# contents of operations.py
+def test_add():
+    result = operations.add(3, 5)
+    assert result == 8
+
+def test_subtract():
+    result = operations.subtract(10, 4)
+    assert result == 6
+
+def test_multiply():
+    result = operations.multiply(2, 6)
+    assert result == 12
+
+def test_divide():
+    result = operations.divide(8, 4)
+    assert result == 2
+
+def test_divide_by_zero():
+    result = operations.divide(10, 0)
+    assert result == "Cannot divide by zero"
+
+
+# contents of main_program.py
+from math_operations import operations
+
+if __name__ == '__main__':
+    test_add()
+    test_subtract()
+    test_multiply()
+    test_divide()
+    test_divide_by_zero()
+
+
+9. The following code is given.
+Implement a decorator that will calculate and print the total duration of the function.
+
+# code start
+import time
+
+
+def slow_function():
+    # Simulate a slow function
+    time.sleep(2)
+    print("Function executed!")
+
+# code end
+
+10. The following code is given.
+Implement the decorator that will return the result of the function, 
+only if the result is bellow the set limit. If false, the decorator will
+print out the "limit" parameter
+
+
+@max_result(limit=10)
+def square(number):
+    return number ** 2
+
+@max_result(limit=50)
+def multiply(a, b):
+    return a * b
+
+if __name__ == "__main__":
+    squared_result = square(5)
+    print(f"Square result: {squared_result}")
+
+    multiplied_result = multiply(8, 7)
+    print(f"Multiplication result: {multiplied_result}")
