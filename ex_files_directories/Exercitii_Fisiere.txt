@@ -1,0 +1,287 @@
+Exercițiul 1 – Citește tot fișierul
+Cerință:
+Citește conținutul fișierului input.txt și afișează-l integral.
+Mock input – input.txt:
+Salut!
+Acesta este un fișier de test.
+Output așteptat:
+Salut!
+Acesta este un fișier de test.
+Exercițiul 2 – Citește prima linie
+Cerință:
+Afișează doar prima linie din fișierul input.txt.
+Mock input – input.txt:
+Prima linie
+A doua linie
+Output așteptat:
+Prima linie
+Exercițiul 3 – Numără liniile
+Cerință:
+Afișează numărul total de linii din input.txt.
+Mock input – input.txt:
+a
+b
+c
+d
+Output așteptat:
+4
+Exercițiul 4 – Scriere fișier
+Cerință:
+Scrie textul "Salut, Python!" în fișierul output.txt.
+Mock input:
+Nu există fișier inițial.
+Output așteptat – output.txt:
+Salut, Python!
+Exercițiul 5 – Adăugare la final
+Cerință:
+Adaugă linia "Linie nouă" la finalul fișierului output.txt.
+Mock input – output.txt:
+Linie existentă
+Output așteptat – output.txt:
+Linie existentă
+Linie nouă
+Exercițiul 6 – Copiere fișier
+Cerință:
+Copiază conținutul din input.txt în copy.txt.
+Mock input – input.txt:
+ABC
+123
+Output așteptat – copy.txt:
+ABC
+123
+
+
+
+Exercițiul 7 – Linii într-o listă
+Cerință:
+Încarcă toate liniile din input.txt într-o listă și afișează numărul lor.
+Mock input – input.txt:
+mere
+pere
+banane
+Output așteptat:
+3
+Exercițiul 8 – Scriere listă
+Cerință:
+Scrie lista ["a", "b", "c"] într-un fișier, câte un element pe linie.
+Mock input:
+Lista din cod.
+Output așteptat – letters.txt:
+a
+b
+c
+Exercițiul 9 – Dimensiunea fișierului
+Cerință:
+Afișează dimensiunea în bytes a fișierului input.txt.
+Mock input – input.txt:
+abc
+Output așteptat:
+4 (3 caractere + newline)
+
+
+Exercițiul 10 – Verificare existență
+Cerință:
+Verifică dacă fișierul input.txt există.
+Mock input:
+Fișierul există.
+Output așteptat:
+True
+Exercițiul 11 – Număr de cuvinte
+Cerință:
+Numără cuvintele din input.txt.
+Mock input – input.txt:
+Python este foarte util
+Output așteptat:
+4
+Exercițiul 12 – Număr apariții caracter
+Cerință:
+Afișează de câte ori apare litera a în input.txt.
+Mock input – input.txt:
+ana are mere
+Output așteptat:
+3
+Exercițiul 13 – Conversie uppercase
+Cerință:
+Scrie într-un fișier nou conținutul lui input.txt transformat în majuscule.
+Mock input – input.txt:
+Python este cool
+Output așteptat – upper.txt: PYTHON ESTE COOL
+Exercițiul 14 – Eliminare linii goale
+Cerință:
+Creează un fișier fără liniile goale din input.txt.
+Mock input – input.txt:
+A
+
+B
+
+c
+Output așteptat – no_blanks.txt:
+a
+b
+c
+
+Exercițiul 15 – Ultimele N linii
+Cerință:
+Afișează ultimele 5 linii din input.txt.
+Mock input – input.txt:
+1
+2
+3
+4
+5
+6
+7
+Output așteptat:
+3
+4
+5
+6
+7
+
+Exercițiul 16 – Căutare cuvânt
+Cerință:
+Afișează numerele de linie unde apare cuvântul error.
+Mock input – log.txt:
+info start
+error failed
+warning
+error retry
+Output așteptat:
+2
+4
+
+Exercițiul 17 – Înlocuire text
+Cerință:
+Înlocuiește toate aparițiile lui foo cu bar.
+Mock input – input.txt:
+foo test foo
+Output așteptat – replaced.txt:
+bar test bar
+
+
+
+Exercițiul 18 – CSV: sumă coloană
+Cerință:
+Calculează suma valorilor din coloana amount.
+Mock input – sales.csv:
+amount
+10
+20
+30
+Output așteptat:
+60
+
+Exercițiul 19 – CSV: filtrare
+Cerință:
+Salvează doar rândurile cu amount > 100.
+Mock input – sales.csv:
+amount
+50
+120
+200
+Output așteptat – sales_over_100.csv:
+amount
+120
+200
+
+Exercițiul 20 – JSON: extragere câmp
+Cerință:
+Afișează toate valorile câmpului name.
+Mock input – data.json:
+[
+  {"name": "Ana"},
+  {"name": "Ion"}
+]
+Output așteptat:
+Ana
+Ion
+
+Exercițiul 21 – JSON: actualizare
+Cerință:
+Setează câmpul active la true.
+Mock input – user.json:
+{"name": "Dan"}
+Output așteptat – user.json:
+{"name": "Dan", "active": true}
+
+Exercițiul 22 – Combinare fișiere
+Cerință:
+Combină liniile din două fișiere.
+Mock input – a.txt:
+1
+2
+Mock input – b.txt:
+A
+B
+Output așteptat – merged.txt:
+1 | A
+2 | B
+Exercițiul 23 – Citire binară în bucăți
+Cerință:
+Copiază un fișier binar mare în altul.
+Mock input:
+big.bin (fișier binar)
+Output așteptat:
+big_copy.bin identic cu originalul.
+Exercițiul 24 – Raport statistic
+Cerință:
+Creează un raport cu linii, cuvinte și caractere.
+Mock input – input.txt:
+Ana are mere
+Output așteptat – report.txt:
+Linii: 1
+Cuvinte: 3
+Caractere: 12
+Exercițiul 25 – Redenumire fișiere
+Cerință:
+Redenumește fișiere .jpg într-un folder folosind un index.
+Mock input – photos/:
+a.jpg
+b.jpg
+Output așteptat – photos/:
+img_001.jpg
+img_002.jpg
+Exercițiul 26 – Detectare duplicate
+Cerință:
+Identifică fișierele cu conținut identic.
+Mock input – docs/:
+a.txt (ABC)
+b.txt (ABC)
+c.txt (XYZ)
+Output așteptat:
+a.txt, b.txt
+Exercițiul 27 – Config key=value
+Cerință:
+Construiește un dicționar dintr-un fișier .env.
+Mock input – config.env:
+HOST=localhost
+PORT=8000
+Output așteptat:
+{'HOST': 'localhost', 'PORT': '8000'}
+Exercițiul 28 – Log rotation
+Cerință:
+Dacă fișierul depășește 1MB, redenumește-l și creează unul nou.
+Mock input:
+app.log (2MB)
+Output așteptat:
+app.log.1
+app.log
+
+
+Exercițiul 29 – Indexare fișiere
+Cerință:
+Listează recursiv toate fișierele dintr-un folder.
+Mock input – project/:
+a.py
+sub/b.py
+Output așteptat – index.txt:
+a.py
+sub/b.py
+Exercițiul 30 – Scriere sigură (atomică)
+Cerință:
+Adaugă o linie într-un fișier folosind un fișier temporar.
+Mock input – data.txt:
+linie veche
+Output așteptat – data.txt:
+linie veche
+linie adăugată
