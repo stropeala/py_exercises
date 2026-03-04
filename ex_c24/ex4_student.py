@@ -29,7 +29,7 @@ class Student:
         if self.grades == []:
             return 0.0
         else:
-            average = sum(self.grades) / len(self.grades)
+            average = round(sum(self.grades) / len(self.grades), 2)
             return average
 
 
