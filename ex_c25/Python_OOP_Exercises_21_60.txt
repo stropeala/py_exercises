@@ -1,0 +1,335 @@
+Encapsulation
+Exercise 1: OOP Exercise
+Create a class called Person.
+
+The class should store:
+• name (public attribute)
+• age (private attribute)
+
+Tasks:
+1. Create a constructor that receives name and age.
+2. Store age as a private attribute using __age.
+3. Create a method get_age() that returns the age.
+
+Goal: learn how private attributes protect data inside a class.
+Exercise 2: OOP Exercise
+Extend the Person class.
+
+Instead of modifying the age directly, create a setter method.
+
+Tasks:
+1. Create a method set_age(new_age).
+2. If the value is negative, raise a ValueError.
+3. Otherwise update the private attribute.
+
+Goal: understand how encapsulation controls how data is modified.
+Exercise 3: OOP Exercise
+Create a BankAccount class.
+
+Attributes:
+• owner (public)
+• balance (private)
+
+Tasks:
+1. Constructor receives owner and initial balance.
+2. Create deposit(amount).
+3. Create withdraw(amount).
+4. Create get_balance().
+
+Goal: simulate a very small banking system.
+Exercise 4: OOP Exercise
+Improve the BankAccount class.
+
+Withdrawals should not be allowed if the balance becomes negative.
+Tasks:
+1. Modify withdraw().
+2. If withdrawal is larger than balance, raise an error.
+
+Goal: enforce rules inside a class.
+Exercise 5: OOP Exercise
+Create a Student class.
+
+Attributes:
+• name
+• grades (private list)
+
+Tasks:
+1. Method add_grade(grade).
+2. Method get_average().
+3. If the list is empty return 0.
+
+Goal: store and manage collections safely.
+Exercise 6: OOP Exercise
+Create a Car class.
+
+Attributes:
+• brand
+• speed (private)
+
+Tasks:
+1. accelerate(value)
+2. brake(value)
+3. Speed should never go below 0.
+4. get_speed()
+
+Goal: maintain valid object state.
+Exercise 7: OOP Exercise
+Create a Rectangle class.
+
+Attributes:
+• width
+• height (private)
+
+Tasks:
+1. Validate that width and height are positive.
+2. Use setter methods.
+3. Implement area().
+
+Goal: ensure correct data before using it.
+Exercise 8: OOP Exercise
+Create a PasswordManager class.
+
+Attributes:
+• password (private)
+
+Tasks:
+1. Store the password privately.
+2. Implement check_password(input_password).
+3. Return True or False.
+
+Goal: simulate a simple login system.
+Exercise 9: OOP Exercise
+Create a Temperature class.
+
+Attributes:
+• celsius (private)
+
+Tasks:
+1. Constructor receives Celsius.
+2. Implement to_fahrenheit().
+
+Formula:
+F = C * 9/5 + 32
+
+Goal: expose useful methods while protecting internal data.
+Exercise 10: OOP Exercise
+Create a GameCharacter class.
+
+Attributes:
+• health (private) starting at 100
+
+Tasks:
+1. take_damage(value)
+2. heal(value)
+3. Health must stay between 0 and 100.
+4. get_health()
+
+Goal: protect logical constraints.
+Abstraction
+Exercise 11: OOP Exercise
+Create an abstract class called Animal.
+
+It should define an abstract method make_sound().
+Then create:
+• Dog class
+• Cat class
+
+Each class must implement make_sound().
+
+Goal: separate definition from implementation.
+Exercise 12: OOP Exercise
+Create an abstract class Shape with a method area().
+
+Then create:
+• Rectangle class
+• Circle class
+
+Each class must implement area().
+
+Goal: define a common interface.
+Exercise 13: OOP Exercise
+Create an abstract class Vehicle with method move().
+
+Then create:
+• Car
+• Bicycle
+
+Each class should return a different message when move() is called.
+Exercise 14: OOP Exercise
+Create an abstract class PaymentMethod.
+
+Define method pay(amount).
+
+Implement:
+• CreditCard
+• Cash
+
+Goal: represent different payment systems using the same interface.
+Exercise 15: OOP Exercise
+Create an abstract class Employee.
+
+Define method calculate_salary().
+
+Implement:
+• FullTimeEmployee
+• PartTimeEmployee
+
+Goal: show that subclasses implement the details.
+Exercise 16: OOP Exercise
+Create an abstract class Appliance with method turn_on().
+
+Implement:
+• WashingMachine
+• Fridge
+
+Goal: all appliances share behavior but implement it differently.
+Exercise 17: OOP Exercise
+Create an abstract class Notification with send().
+
+Implement:
+• EmailNotification
+• SMSNotification
+
+Goal: different delivery channels share a common interface.
+Exercise 18: OOP Exercise
+Create an abstract class Game with start().
+
+Implement:
+• Chess
+• FootballGame
+
+Goal: multiple games share a common starting behavior.
+Exercise 19: OOP Exercise
+Create an abstract class Database with connect().
+
+Implement:
+• MySQLDatabase
+• SQLiteDatabase
+
+Goal: hide connection implementation behind an interface.
+Exercise 20: OOP Exercise
+Create an abstract class Report with generate().
+
+Implement:
+• PDFReport
+• CSVReport
+
+Goal: different output formats share the same interface.
+Inheritance
+Exercise 21: OOP Exercise
+Create a base class Animal with attribute name and method eat().
+
+Create a Dog class that inherits from Animal.
+
+Goal: reuse functionality from a base class.
+Exercise 22: OOP Exercise
+Create base class Vehicle with attribute brand and method start().
+
+Create:
+• Car
+• Motorcycle
+
+Both inherit from Vehicle.
+Exercise 23: OOP Exercise
+Create base class Person with name and greet().
+
+Create:
+• Student
+• Teacher
+
+Each class should inherit from Person.
+Exercise 24: OOP Exercise
+Create base class Shape with attribute color.
+
+Create:
+• Circle
+• Square
+
+Both inherit from Shape.
+Exercise 25: OOP Exercise
+Create base class Device with method turn_on().
+
+Create:
+• Laptop
+• Smartphone
+
+Override turn_on() if needed.
+
+
+
+Exercise 26: OOP Exercise
+Create base class Employee with name and salary.
+
+Create Manager class that adds a bonus.
+Exercise 27: OOP Exercise
+Create class Book with title and author.
+
+Create subclass EBook that adds file_size.
+Exercise 28: OOP Exercise
+Create class Account with owner and balance.
+
+Create SavingsAccount that adds interest_rate.
+Exercise 29: OOP Exercise
+Create class User with username.
+
+Create AdminUser that has additional permissions.
+Exercise 30: OOP Exercise
+Create base class Food.
+
+Create subclasses:
+• Pizza
+• Salad
+
+Goal: demonstrate simple inheritance.
+Polymorphism
+Exercise 31: OOP Exercise
+Create classes Dog and Cat.
+
+Both must implement method speak().
+
+Create a list containing both objects and call speak() in a loop.
+Exercise 32: OOP Exercise
+Create classes Circle and Rectangle.
+
+Both implement area().
+
+Store them in a list and calculate areas.
+
+
+
+Exercise 33: OOP Exercise
+Create classes Car and Bicycle.
+
+Both implement move().
+
+Demonstrate calling the same method on different objects.
+Exercise 34: OOP Exercise
+Create two employee types with calculate_salary().
+
+Store them in a list and calculate salaries.
+Exercise 35: OOP Exercise
+Create multiple payment classes with pay().
+
+Demonstrate using them interchangeably.
+Exercise 36: OOP Exercise
+Create TextFile and ImageFile classes with open().
+
+Call open() for each object.
+Exercise 37: OOP Exercise
+Create EmailNotification and PushNotification with send().
+
+Use them in the same loop.
+Exercise 38: OOP Exercise
+Create two game classes with start().
+
+Start all games from a list.
+Exercise 39: OOP Exercise
+Create multiple animal classes with make_sound().
+
+Call the method polymorphically.
+Exercise 40: OOP Exercise
+Create Bus and Train classes with move().
+
+Use a function that accepts either object and calls move().
+
+
