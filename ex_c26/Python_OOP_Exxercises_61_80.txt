@@ -1,0 +1,448 @@
+1. Car class
+Create a Car class with the attributes: brand, model, year.
+Add a method describe() that returns a sentence describing the car.
+Starter code:
+class Car:
+
+    def __init__(self, brand, model, year):
+        # TODO: store attributes
+        pass
+
+    def describe(self):
+        # TODO: return a description string
+        pass
+
+
+car1 = Car("Toyota", "Corolla", 2020)
+print(car1.describe())
+
+2. Student class with average
+Create a Student class with: name and grades (a list).
+Add a method average_grade().
+Starter code:
+
+class Student:
+
+    def __init__(self, name, grades):
+        # TODO: store attributes
+        pass
+
+    def average_grade(self):
+        # TODO: return the average of grades
+        pass
+
+
+student1 = Student("Ana", [8, 9, 10])
+print(student1.average_grade())
+
+3. BankAccount deposit
+Create a BankAccount class with: owner and balance.
+Add a method deposit(amount).
+Starter code:
+
+class BankAccount:
+
+    def __init__(self, owner, balance=0):
+        # TODO: initialize attributes
+        pass
+
+    def deposit(self, amount):
+        # TODO: increase the balance
+        pass
+
+
+account = BankAccount("Dan", 100)
+account.deposit(50)
+
+print(account.balance)
+
+4. BankAccount withdraw
+Extend the previous class with a method withdraw(amount).
+The withdrawal should only work if the account has enough money.
+Starter code:
+
+class BankAccount:
+
+    def __init__(self, owner, balance=0):
+        pass
+
+    def deposit(self, amount):
+        pass
+
+    def withdraw(self, amount):
+        # TODO:
+        # if balance is enough -> subtract money and return True
+        # otherwise return False
+        pass
+
+
+account = BankAccount("Maria", 200)
+print(account.withdraw(50))
+print(account.withdraw(500))
+
+5. Rectangle area and perimeter
+Create a Rectangle class with width and height.
+Add methods area() and perimeter().
+Starter code:
+class Rectangle:
+
+    def __init__(self, width, height):
+        pass
+
+    def area(self):
+        # TODO: calculate area
+        pass
+
+    def perimeter(self):
+        # TODO: calculate perimeter
+        pass
+
+
+rect = Rectangle(4, 6)
+print(rect.area())
+print(rect.perimeter())
+
+6. Dog speaks
+Create a Dog class with name and breed.
+Add a method speak() that returns "Woof!".
+Starter code:
+
+class Dog:
+
+    def __init__(self, name, breed):
+        pass
+
+    def speak(self):
+        # TODO: return dog sound
+        pass
+
+
+dog1 = Dog("Max", "Labrador")
+print(dog1.speak())
+
+7. Employee yearly salary
+Create an Employee class with name and monthly_salary.
+Add a method yearly_salary().
+Starter code:
+
+class Employee:
+
+    def __init__(self, name, monthly_salary):
+        pass
+
+    def yearly_salary(self):
+        # TODO: calculate yearly salary
+        pass
+
+emp = Employee("Ioana", 3500)
+print(emp.yearly_salary())
+8. Book availability
+Create a Book class with title, author, and is_borrowed (default False).
+Add methods borrow_book() and return_book().
+Starter code:
+
+class Book:
+
+    def __init__(self, title, author):
+        pass
+
+    def borrow_book(self):
+        # TODO: change state if book is available
+        pass
+
+    def return_book(self):
+        # TODO: mark book as returned
+        pass
+
+
+book = Book("1984", "George Orwell")
+
+print(book.borrow_book())
+print(book.borrow_book())
+
+9. Circle circumference
+Create a Circle class with radius.
+Add methods area() and circumference(). Use 3.14 for pi.
+
+Starter code:
+
+class Circle:
+
+    def __init__(self, radius):
+        pass
+
+    def area(self):
+        pass
+
+    def circumference(self):
+        pass
+
+
+circle = Circle(5)
+
+print(circle.area())
+print(circle.circumference())
+
+
+
+
+
+
+
+
+
+10. Counter with class attribute
+Create a Counter class with a class attribute count.
+Each time an object is created, increase the counter.
+Starter code:
+
+class Counter:
+
+    count = 0
+
+    def __init__(self):
+        # TODO: increase the class counter
+        pass
+
+
+c1 = Counter()
+c2 = Counter()
+c3 = Counter()
+
+print(Counter.count)
+
+11. Laptop turn on/off
+Create a Laptop class with brand and is_on (default False).
+Add methods turn_on() and turn_off().
+Starter code:
+
+class Laptop:
+
+    def __init__(self, brand):
+        pass
+
+    def turn_on(self):
+        pass
+
+    def turn_off(self):
+        pass
+
+
+laptop = Laptop("Dell")
+
+print(laptop.is_on)
+laptop.turn_on()
+print(laptop.is_on)
+
+12. Shopping cart item count
+Create a ShoppingCart class.
+Attributes: items (empty list)
+Methods: add_item(item), total_items()
+Starter code:
+
+class ShoppingCart:
+
+    def __init__(self):
+        pass
+
+    def add_item(self, item):
+        pass
+
+    def total_items(self):
+        pass
+
+
+cart = ShoppingCart()
+
+cart.add_item("Milk")
+cart.add_item("Bread")
+
+print(cart.total_items())
+
+13. Movie recommendation check
+Create a Movie class with title and rating.
+Add method is_recommended().
+Starter code:
+
+class Movie:
+
+    def __init__(self, title, rating):
+        pass
+
+    def is_recommended(self):
+        # return True if rating >= 8
+        pass
+
+
+movie = Movie("Inception", 9)
+
+print(movie.is_recommended())
+
+14. Temperature conversion
+Create a Temperature class with celsius.
+Add method to_fahrenheit().
+Starter code:
+
+class Temperature:
+
+    def __init__(self, celsius):
+        pass
+
+    def to_fahrenheit(self):
+        pass
+
+
+temp = Temperature(25)
+
+print(temp.to_fahrenheit())
+
+15. User login state
+Create a User class with username and logged_in (default False).
+Add methods login() and logout().
+Starter code:
+
+class User:
+
+    def __init__(self, username):
+        pass
+
+    def login(self):
+        pass
+
+    def logout(self):
+        pass
+
+
+user = User("dan123")
+
+print(user.logged_in)
+
+user.login()
+
+print(user.logged_in)
+
+16. Inheritance with Animal and Cat
+Create a base class Animal with a method speak().
+Create a Cat class that inherits from Animal and overrides speak().
+Starter code:
+
+class Animal:
+
+    def __init__(self, name):
+        pass
+
+    def speak(self):
+        pass
+
+
+class Cat(Animal):
+
+    def speak(self):
+        # TODO: override method
+        pass
+
+
+cat = Cat("Mimi")
+
+print(cat.speak())
+
+17. Teacher inherits from Person
+Create a Person class.
+Create a Teacher class that inherits from Person and adds subject.
+
+Starter code:
+
+class Person:
+
+    def __init__(self, name, age):
+        pass
+
+
+class Teacher(Person):
+
+    def __init__(self, name, age, subject):
+        pass
+
+    def introduce(self):
+        pass
+
+
+teacher = Teacher("Oana", 30, "Python")
+
+print(teacher.introduce())
+
+18. Polymorphism with vehicles
+Create two classes Bike and Plane.
+Both must implement move().
+
+Starter code:
+
+class Bike:
+
+    def move(self):
+        pass
+
+
+class Plane:
+
+    def move(self):
+        pass
+
+
+vehicles = [Bike(), Plane()]
+
+for vehicle in vehicles:
+    print(vehicle.move())
+
+19. Product discount
+Create a Product class.
+Add method apply_discount(percent).
+
+Starter code:
+
+class Product:
+
+    def __init__(self, name, price):
+        pass
+
+    def apply_discount(self, percent):
+        pass
+
+
+product = Product("Keyboard", 200)
+
+product.apply_discount(10)
+
+print(product.price)
+
+20. Classroom with students
+Create a Classroom class.
+
+Attributes:
+name
+students (empty list)
+
+Methods:
+add_student(student_name)
+show_students()
+Starter code:
+
+class Classroom:
+
+    def __init__(self, name):
+        pass
+
+    def add_student(self, student_name):
+        pass
+
+    def show_students(self):
+        pass
+
+
+room = Classroom("Python Beginners")
+
+room.add_student("Ana")
+room.add_student("Vlad")
+
+print(room.show_students())
+
