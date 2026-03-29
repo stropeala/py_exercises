@@ -1,0 +1,13 @@
+Flask Exercises
+1. Hello, Flask!
+Create a Flask app that returns 'Hello, World!' at '/'
+2. Custom Greeting
+Route /greet returns 'Hello, Dan!'
+3. Multiple Routes
+/ and /about
+4. Return HTML
+Return simple HTML
+5. First Template
+Render index.html
+6. Pass Variables
+Pass name to template
